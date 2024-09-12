@@ -11,20 +11,26 @@ cd api-juntos-energia
 
 2. Instale as dependências:
 npm install
+
 3. Configure a conexão com o MongoDB:
 Substitua a URL de conexão no arquivo src/index.js pela sua URL do MongoDB Atlas.
+
 🚀 Execução
 Para iniciar o servidor, utilize o seguinte comando:
 
 node src/index.js
+
 O servidor estará rodando na porta configurada (por padrão, http://localhost:3000).
 
 🔗 Endpoints
+
 GET / - Verificar se a API está rodando
 Resposta esperada:
 {
   "message": "API rodando"
 }
+
+
 POST /products - Criar um novo produto
 Exemplo de corpo da requisição:
 {
@@ -35,12 +41,14 @@ Exemplo de corpo da requisição:
   "category": "Categoria do Produto"
 }
 
+
 GET /products - Listar todos os produtos
 Suporta filtros por categoria e faixa de preço.
 Parâmetros de consulta (query):
 category (opcional): Filtra produtos por categoria.
 minPrice (opcional): Faixa mínima de preço.
 maxPrice (opcional): Faixa máxima de preço.
+
 
 GET /products/
 - Buscar um produto pelo ID
@@ -54,6 +62,7 @@ Resposta esperada:
   "category": "Eletrônicos"
 } 
 
+
 PUT /products/
 - Atualizar um produto pelo ID
 Exemplo de corpo da requisição:
@@ -65,21 +74,27 @@ Exemplo de corpo da requisição:
   "category": "Categoria Atualizada"
 }
 
+
 Respostas:
 200 OK: Produto atualizado com sucesso.
 400 Bad Request: Campos obrigatórios ausentes ou erro de validação.
 404 Not Found: Produto não encontrado.
 500 Internal Server Error: Erro ao atualizar o produto.
 
+
 DELETE /products/
 - Remover um produto pelo ID
 
+
 🛠️ Requisitos
 Node.js
+
 MongoDB Atlas
+
 
 🤝 Contribuições
 Se você deseja contribuir com o projeto, por favor, abra uma issue ou envie um pull request.
+
 
 📝 Licença
 Este projeto é licenciado sob a Licença MIT.
