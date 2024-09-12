@@ -76,9 +76,13 @@ Exemplo de corpo da requisição:
 
 
 Respostas:
+
 200 OK: Produto atualizado com sucesso.
+
 400 Bad Request: Campos obrigatórios ausentes ou erro de validação.
+
 404 Not Found: Produto não encontrado.
+
 500 Internal Server Error: Erro ao atualizar o produto.
 
 
@@ -87,9 +91,7 @@ DELETE /products/
 
 
 🛠️ Requisitos
-Node.js
-
-MongoDB Atlas
+Node.js e MongoDB Atlas
 
 
 🤝 Contribuições
